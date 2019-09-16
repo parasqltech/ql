@@ -1,0 +1,18 @@
+query MyQuery {
+  allWordpressPage(filter: {wordpress_id: {eq: 31}}) {
+    edges {
+      node {
+        title
+        acf {
+          standort {
+            foto
+          }
+          personen_page {
+            bild
+            name
+          }
+        }
+      }
+    }
+  }
+}
